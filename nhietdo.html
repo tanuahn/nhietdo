@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function NhietDo(doc) {
+            this.doc = doc;
+            this.getDoF = function () {
+                return (this.doc * 1.8) + 32;
+            }
+            this.getDoKenvin = function () {
+                return this.doc + 273.15;
+            }
+
+        }
+        var nhietdo = new NhietDo(25);
+        var dof = nhietdo.getDoF();
+        var dok = nhietdo.getDoKenvin();
+        alert("Do F: " + dof + "Do K: " + dok);
+    </script>
+</body>
+</html>
